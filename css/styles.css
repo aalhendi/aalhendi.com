@@ -47,7 +47,7 @@ li {
     margin: 5px;
 }
 
-p {
+.CenteredMonospace {
     font-family: monospace;
     font-size: 12;
     text-align: center;
