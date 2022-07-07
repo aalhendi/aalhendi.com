@@ -1,0 +1,24 @@
+---
+import Page from '../components/Page.astro'
+import SiteHeader from '../components/SiteHeader.astro'
+
+const title = 'aalhendi'
+const description = "some of my stuff"
+---
+
+<Page {title} {description}>
+
+    <SiteHeader />
+
+    <div class='flex justify-center'>
+        <div class='text-lg w-5/6 lg:w-3/4'>
+            <p class='my-6 font-semibold'>
+                {description}
+            </p>
+            <p class='my-6'>
+                Will put up some things here when I feel like it.
+            </p>
+        </div>
+    </div>
+
+</Page>

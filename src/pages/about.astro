@@ -1,0 +1,31 @@
+---
+
+import Page from '../components/Page.astro'
+import SiteHeader from '../components/SiteHeader.astro'
+
+const title = 'About'
+const description = 'About Me'
+
+---
+
+<Page {title} {description}>
+
+    <SiteHeader />
+
+    <div class='flex justify-center'>
+        <div class='text-lg w-5/6 lg:w-3/4'>
+            <p class='my-6 font-semibold'>
+                {description}
+            </p>
+            <p class='my-6'>
+                nice little paragraph goes here
+            </p>
+            <div class='ml-8 text-lg text-zinc-900 prose'>
+                <p>List of stuff <a class='underline underline-offset-2 decoration-dashed font-light' target='_blank' href='/mdpage'>here</a></p>
+            </div>
+            <p class='my-6'>
+                extra para
+            </p>
+        </div>
+    </div>
+</Page>
