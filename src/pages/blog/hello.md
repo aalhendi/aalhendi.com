@@ -1,0 +1,10 @@
+---
+setup: |
+  import Layout from '../../layouts/BlogPost.astro'
+title: hello:)
+publishDate: 07 July 2022
+description: Hello, world.
+---
+
+Blog posts here are markdown files. Pretty neat to write, preview and update.
+
