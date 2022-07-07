@@ -9,12 +9,14 @@ specifiers:
   '@tailwindcss/typography': ^0.5.2
   astro: ^1.0.0-beta.64
   preact: ^10.9.0
+  preact-render-to-string: ^5.2.0
   tailwindcss: ^3.1.4
 
 dependencies:
   '@astrojs/markdown-remark': 0.11.3
   '@tailwindcss/typography': 0.5.2_tailwindcss@3.1.4
   preact: 10.9.0
+  preact-render-to-string: 5.2.0_preact@10.9.0
 
 devDependencies:
   '@astrojs/preact': 0.3.1_vy4bm5pubfgnqj4g2oqbe6hx6m
@@ -2927,7 +2929,6 @@ packages:
     dependencies:
       preact: 10.9.0
       pretty-format: 3.8.0
-    dev: true
 
   /preact/10.9.0:
     resolution: {integrity: sha512-jO6/OvCRL+OT8gst/+Q2ir7dMybZAX8ioP02Zmzh3BkQMHLyqZSujvxbUriXvHi8qmhcHKC2Gwbog6Kt+YTh+Q==}
@@ -2945,7 +2946,6 @@ packages:
 
   /pretty-format/3.8.0:
     resolution: {integrity: sha512-WuxUnVtlWL1OfZFQFuqvnvs6MiAGk9UNsBostyBOB0Is9wb5uRESevA6rnl/rkksXaGX3GzZhPup5d6Vp1nFew==}
-    dev: true
 
   /prismjs/1.28.0:
     resolution: {integrity: sha512-8aaXdYvl1F7iC7Xm1spqSaY/OJBpYW3v+KJ+F17iYxvdc8sfjW194COK5wVhMZX45tGteiBQgdvD/nhxcRwylw==}
