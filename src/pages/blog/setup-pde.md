@@ -32,11 +32,11 @@ Overview:
 5. Install global packages for LSP support
 
    ```bash
-   pnpm add -g typescript graphql vscode-langservers-extracted dockerfile-language-server-nodejs graphql-language-service-cli @prisma/language-server @tailwindcss/language-server typescript-language-server yaml-language-server neovim
+   pnpm add -g typescript graphql vscode-langservers-extracted dockerfile-language-server-nodejs pyright graphql-language-service-cli @prisma/language-server @tailwindcss/language-server typescript-language-server yaml-language-server neovim
    ```
 
    ```bash
-   pip3 install 'python-lsp-server pynvim'
+   pip3 install 'pynvim'
    ```
 
 6. Install [Rust](https://www.rust-lang.org/tools/install)
