@@ -9,6 +9,7 @@ export interface Props {
 const { title, publishDate, heroImage, alt } = Astro.props
 ---
 
+<>
 {heroImage && <div>
     <img class="w-full" loading="eager" src={heroImage} alt={alt} />
 </div>}
@@ -20,3 +21,4 @@ const { title, publishDate, heroImage, alt } = Astro.props
         <slot />
     </div>
 </div>
+</>

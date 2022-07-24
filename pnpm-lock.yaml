@@ -6,6 +6,7 @@ specifiers:
   '@astrojs/sitemap': ^0.2.6
   '@astrojs/tailwind': ^0.2.4
   '@babel/core': ^7.18.9
+  '@originjs/vite-plugin-commonjs': ^1.0.3
   '@tailwindcss/typography': ^0.5.4
   astro: 1.0.0-beta.73
   preact: ^10.10.0
@@ -23,6 +24,7 @@ devDependencies:
   '@astrojs/sitemap': 0.2.6
   '@astrojs/tailwind': 0.2.4
   '@babel/core': 7.18.9
+  '@originjs/vite-plugin-commonjs': 1.0.3
   astro: 1.0.0-beta.73
   tailwindcss: 3.1.6
 
@@ -458,6 +460,12 @@ packages:
     dependencies:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.13.0
+    dev: true
+
+  /@originjs/vite-plugin-commonjs/1.0.3:
+    resolution: {integrity: sha512-KuEXeGPptM2lyxdIEJ4R11+5ztipHoE7hy8ClZt3PYaOVQ/pyngd2alaSrPnwyFeOW1UagRBaQ752aA1dTMdOQ==}
+    dependencies:
+      esbuild: 0.14.49
     dev: true
 
   /@polka/url/1.0.0-next.21:
