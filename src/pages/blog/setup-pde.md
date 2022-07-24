@@ -29,10 +29,10 @@ Overview:
    git clone https://www.github.com/aalhendi/dotfiles && mkdir --parents ~/.config/nvim/ && mv dotfiles/.config/nvim/* ~/.config/nvim/
    ```
 
-5. Install global packages for LSP support
+5. Install global packages
 
    ```bash
-   pnpm add -g typescript graphql vscode-langservers-extracted dockerfile-language-server-nodejs pyright graphql-language-service-cli @prisma/language-server @tailwindcss/language-server typescript-language-server yaml-language-server neovim
+   pnpm add -g typescript graphql neovim
    ```
 
    ```bash
@@ -51,7 +51,7 @@ Overview:
    rustup component add rust-src
    ```
 
-8. Install other packages [clangd](https://clangd.llvm.org/installation.html), [Marksman](https://github.com/artempyanykh/marksman). If clagd-12 is not available, try clagd-9 or clangd-8
+8. Install anything else... Ex. Debian-11 still doesn't have clangd-12 [clangd](https://clangd.llvm.org/installation.html), [Marksman](https://github.com/artempyanykh/marksman).
 
    ```bash
    sudo apt-get install clangd-12
