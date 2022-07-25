@@ -22,5 +22,6 @@
     "@tailwindcss/typography": "^0.5.4",
     "preact": "^10.10.0",
     "preact-render-to-string": "^5.2.1"
+    "@originjs/vite-plugin-commonjs": "^1.0.3",
   }
 }
