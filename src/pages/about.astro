@@ -10,22 +10,45 @@ const description = 'About Me'
 
 <Page {title} {description}>
 
-    <SiteHeader />
+<SiteHeader />
 
-    <div class='flex justify-center'>
-        <div class='text-lg w-5/6 lg:w-3/4'>
-            <p class='my-6 font-semibold'>
-                {description}
-            </p>
-            <p class='my-6'>
-                nice little paragraph goes here
-            </p>
-            <div class='ml-8 text-lg text-zinc-900 prose'>
-                <p>List of stuff <a class='underline underline-offset-2 decoration-dashed font-light' target='_blank' href='/mdpage'>here</a></p>
-            </div>
-            <p class='my-6'>
-                extra para
-            </p>
-        </div>
+<div class='flex justify-center'>
+  <div class='text-lg w-5/6 lg:w-3/4'>
+    <p class='my-6 font-semibold'>
+	{description}
+    </p>
+    <p class='my-6 whitespace-pre'>
+      Someday I might write an intro paragraph...
+    </p>
+    <div class='ml-8 text-lg text-zinc-900 prose'>
+      <p>Formal Experience:</p>
+
+      <ul>
+        <li>
+	  2019 - B.S Chemical Engineering - Iowa State University, USA
+	</li>
+
+	<li>
+	  2016 - 2018 - <a href="https://scholar.google.com/citations?user=daxl9aQAAAAJ&hl=en">Rollins Lab</a>, Research Assistant - Ames, Iowa, USA
+	</li>
+
+	<li>
+	  2018 - 2019 - <a href="https://scholar.google.com/citations?user=53UKJZ8AAAAJ&hl=en">Willette Lab</a>, Research Assistant - Ames, Iowa, USA
+	</li>
+
+	<li>
+	  2018 - 2019 - <a href="https://fshn.hs.iastate.edu/directory/wang-qian/">Wang Lab</a>, Research Assistant - Ames, Iowa, USA
+	</li>
+
+	<li>
+	  2020 - (present) - <a href="https://research.dasmaninstitute.org/en/publications/">Dasman Diabetes Institute</a>, Sr. Research Technician - Kuwait
+	</li>
+      </ul>
+
     </div>
+    <p class='my-6'>
+      Might post some of my recent projects or highlighted works. For now its empty...
+    </p>
+  </div>
+</div>
 </Page>
