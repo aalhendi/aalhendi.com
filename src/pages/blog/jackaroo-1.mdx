@@ -1,0 +1,48 @@
+---
+layout: '@layouts/BlogPost.astro'
+title: Jackaroo Intro
+publishDate: 26th August 2022
+description: What is it? Why is it interesting? Can we solve it?
+draft: true
+---
+Jackaroo is a game founded in %% in the year %%. It its essentially a spinoff of Aggregation and Ludo.
+Its roots could be traced back to %% which was created in the year %%.
+
+# Rules:
+
+## Game:
+The game starts with an empty board, a shuffled deck (52 cards) and 4 players.
+Each player places 4 marbles in jail.
+Deal cards (4 per player, 5 on last round) and play turns counterclockwise.
+
+## Specials
+
+- (1 / Ace) Three options: Free one marble from jail or move 1 or 11 steps
+- (4) Move backwards 4 steps
+- (5) Move any marble on the board 5 steps (Excludes marbles other than your own in their home bases)
+- (7) Split 7 steps over two of your own marbles. (Includes 7-0 and 0-7)
+- (10) Next player discards a card of your choice (Without you looking at the cards) or move ten spaces
+- (11) Swap with any other marble on the board. (Excludes own marbles and marbles in their home base)
+- (13) Free one marble from jail or move your marble 13 steps and eat all the marbles in path.
+
+## Regulars
+
+- (2)  Move 2 steps
+- (3)  Move 3 steps
+- (6)  Move 6 steps
+- (8)  Move 8 steps
+- (9)  Move 9 steps
+- (12) Move 12 steps
+
+# Problem Definition
+There are many algorithms and approaches to design intelligent agents to play games.
+In an attempt to narrow the options, Jackaroo is defined as a Partially Observable Stochastic Game (PSOG) with properties:
+
+- Partially observable (Can't see other agent's cards)
+- Multi-Agent (Co-op AND Competitive) (2v2)
+- Stochastic (Card draw)
+- Static Environment (Nothing changes while agent is deciding)
+- Discrete states (Board has fixed configurations)
+- Horizon - Unsure..
+
+Given that this is multi-agent problem, %%%
