@@ -1,6 +1,13 @@
 ---
 export interface Props {
-    post: any
+  post:{
+    url:string
+    frontmatter:{
+      description:string
+      publishDate:string
+      title:string
+      }
+    }
 }
 
 const { post } = Astro.props

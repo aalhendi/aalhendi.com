@@ -1,18 +1,38 @@
 ---
-import BlogHeader from '../../components/BlogHeader.astro'
-import BlogPostPreview from '../../components/BlogPostPreview.astro'
-import Page from '../../components/Page.astro'
-import PaginationNavigation from '../../components/PaginationNavigation.astro'
+import type { GetStaticPathsOptions, GetStaticPathsResult, Page as PageType } from 'astro'
+import BlogHeader from '@components/BlogHeader.astro'
+import BlogPostPreview from '@components/BlogPostPreview.astro'
+import Page from '@components/Page.astro'
+import PaginationNavigation from '@components/PaginationNavigation.astro'
 
-export async function getStaticPaths({ paginate }) {
+export async function getStaticPaths({ paginate}:GetStaticPathsOptions):Promise<GetStaticPathsResult> {
 
-    let allPosts = await Astro.glob('../blog/*.md')
+    let allPosts = await Astro.glob('../blog/*.mdx')
     allPosts = allPosts.sort(
         (a, b) => new Date(b.frontmatter.publishDate).valueOf() - new Date(a.frontmatter.publishDate).valueOf())
 
     return paginate(allPosts, { pageSize: 3 });
 }
 // All paginated data is passed on the "page" prop
+interface Post {
+    url:string
+    frontmatter:{
+      description:string
+      publishDate:string
+      title:string
+      }
+}
+
+interface PageWithPosts extends Omit<PageType, 'data'> {
+  data:Post[]
+}
+
+interface Props{
+  page: PageWithPosts
+}
+
+
+
 const { page } = Astro.props
 
 const title = 'Micro Blog'
@@ -31,7 +51,7 @@ const description = 'more of a brain dump'
                 </p>
             </div>
 
-            {page.data.map((p) =>
+            {page.data.map((p:Post) =>
             <BlogPostPreview post={p} />
             )}
         </div>

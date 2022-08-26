@@ -1,5 +1,7 @@
 {
   "compilerOptions": {
+    "strict": true,
+    "removeComments": true,
     // Enable top-level await, and other modern ESM features.
     "target": "ESNext",
     "module": "ESNext",
@@ -10,6 +12,27 @@
     // Enable stricter transpilation for better output.
     "isolatedModules": true,
     // Add type definitions for our Vite runtime.
-    "types": ["vite/client"]
+    "types": ["astro/client", "vite/client"],
+    // Astro will directly run your TypeScript code, no transpilation needed.
+    "noEmit": true,
+    "baseUrl": ".",
+    "paths": {
+      "@components/*": ["src/components/*"],
+      "@layouts/*": ["src/layouts/*"]
+    },
+    "importsNotUsedAsValues": "error",
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictBindCallApply": true,
+    "strictPropertyInitialization": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "alwaysStrict": true,
+    "allowSyntheticDefaultImports": true
   }
 }
+
