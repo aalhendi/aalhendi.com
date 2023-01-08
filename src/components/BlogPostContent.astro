@@ -1,30 +1,34 @@
 ---
 export interface Props {
-    title: string
-    publishDate: string
-    description: string
-    heroImage: string
-    alt: string
+  title: string;
+  publishDate: string;
+  description: string;
+  heroImage: string;
+  alt: string;
 }
 
-const { title, publishDate, description, heroImage, alt } = Astro.props
+const { title, publishDate, description, heroImage, alt } = Astro.props;
 ---
 
 <>
-{heroImage && <div>
-    <img class="w-full" loading="eager" src={heroImage} alt={alt} />
-</div>}
+  {
+    heroImage && (
+      <div>
+        <img class="w-full" loading="eager" src={heroImage} alt={alt} />
+      </div>
+    )
+  }
 
-<div class='flex justify-center font-sans text-zinc-700'>
-    <div class='text-lg w-5/6 lg:w-3/4 prose'>
-        <h1 class="text-2xl font-semibold mt-8">{title}</h1>
-        <p class="font-extralight mb-8">{publishDate}</p>
-	<div>
-	  <p class="text-lg my-6">{description}</p>
-	</div>
-	<div class="prose text-lg">
-	  <slot />
-	</div>
+  <div class="flex justify-center font-sans text-zinc-700">
+    <div class="text-lg w-5/6 lg:w-3/4 prose">
+      <h1 class="text-2xl font-semibold mt-8 dark:text-gray-100">{title}</h1>
+      <p class="font-extralight mb-8 dark:text-gray-100">{publishDate}</p>
+      <div>
+        <p class="text-lg my-6">{description}</p>
+      </div>
+      <div class="prose text-lg">
+        <slot />
+      </div>
     </div>
-</div>
+  </div>
 </>

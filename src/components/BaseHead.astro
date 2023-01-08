@@ -1,13 +1,13 @@
 ---
 export interface Props {
-    title: string;
-    description: string;
-    image?: string;
+  title: string;
+  description: string;
+  image?: string;
 }
 const { title, description, image } = Astro.props;
 
-const canonicalURL = new URL(Astro.url.pathname, Astro.site)
-const permalink = `${canonicalURL.href}`
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const permalink = `${canonicalURL.href}`;
 ---
 
 <meta charset="utf-8" />
