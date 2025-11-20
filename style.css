@@ -1,0 +1,268 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CSS Variables for theme */
+:root {
+    --bg-color: #ffffff;
+    --text-color: #374151;
+    --header-color: #374151;
+    --link-color: #2563eb;
+    --border-color: #e5e7eb;
+}
+
+/* Dark theme */
+[data-theme="dark"] {
+    --bg-color: #1f2937;
+    --text-color: #f9fafb;
+    --header-color: #f9fafb;
+    --link-color: #60a5fa;
+    --border-color: #374151;
+}
+
+/* Body and layout */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header styles */
+header {
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+header a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    margin: 2.5rem 0;
+}
+
+.logo {
+    height: 7rem;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 1.875rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+    font-weight: 800;
+    font-family: 'Courier New', monospace;
+    color: var(--header-color);
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
+    gap: 1rem;
+}
+
+nav a {
+    text-decoration: underline;
+    text-underline-offset: 0.25rem;
+    text-decoration-style: dashed;
+    color: var(--text-color);
+    padding: 0.25rem 0.5rem;
+    transition: color 0.2s ease;
+}
+
+nav a:hover {
+    color: var(--link-color);
+}
+
+/* Theme toggle button */
+.theme-toggle {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    transition: background-color 0.2s ease;
+}
+
+.theme-toggle:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="dark"] .theme-toggle:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Main content */
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    padding: 0 1rem;
+}
+
+.content {
+    font-size: 1.125rem;
+    max-width: 48rem;
+    width: 100%;
+}
+
+.description {
+    margin: 1.5rem 0;
+    font-weight: 600;
+}
+
+.intro {
+    margin: 1.5rem 0;
+    white-space: pre-line;
+}
+
+/* Resume link */
+.resume-link {
+    color: var(--link-color);
+    font-size: 1.25rem;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.resume-link:hover {
+    text-decoration: underline;
+}
+
+/* Experience section */
+.experience {
+    margin: 2rem 0;
+    padding-left: 2rem;
+}
+
+.experience p {
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.experience ul {
+    list-style-type: disc;
+    margin-left: 1.5rem;
+}
+
+.experience li {
+    margin-bottom: 0.75rem;
+    line-height: 1.8;
+}
+
+.experience a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.experience a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 4rem 0 0.75rem 0;
+    margin-top: auto;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    align-items: center;
+}
+
+.footer-left {
+    text-align: right;
+}
+
+.footer-center {
+    font-size: 0.875rem;
+    color: var(--text-color);
+}
+
+.footer-right {
+    text-align: left;
+}
+
+.footer a {
+    text-decoration: underline;
+    text-underline-offset: 0.25rem;
+    text-decoration-style: dashed;
+    color: var(--text-color);
+    transition: color 0.2s ease;
+}
+
+.footer a:hover {
+    color: var(--link-color);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .content {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .logo {
+        height: 6rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+        text-align: center;
+    }
+
+    .footer-left,
+    .footer-right {
+        text-align: center;
+    }
+
+    .experience {
+        padding-left: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        height: 5rem;
+    }
+
+    h1 {
+        font-size: 1.25rem;
+    }
+
+    .content {
+        font-size: 0.875rem;
+    }
+}
