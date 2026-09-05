@@ -1,73 +1,241 @@
 <!DOCTYPE html>
-<html lang="en-gb">
+<html lang="en-gb" data-resume-view="full">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - aalhendi</title>
-    <meta name="description" content="About Me">
-    <link rel="stylesheet" href="style.css">
+    <meta name="color-scheme" content="light dark">
+    <script src="theme.js"></script>
+    <meta name="description" content="Abdulrazzaq Alhendi - backend and systems engineer specialising in payments, distributed systems, Rust and Java.">
+    <title>About - Abdulrazzaq Alhendi</title>
+    <link rel="canonical" href="https://aalhendi.com/about.html">
+    <link rel="stylesheet" href="resume.css">
+    <script src="resume.js" defer></script>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <a href="/">
-                <div class="logo-container">
-                    <img class="logo" src="/assets/logo.png" alt="Peepo Shark">
-                </div>
-                <h1>aalhendi</h1>
-            </a>
-            <nav>
-                <a href="/">Home</a>
-                <a href="/about.html">About</a>
-                <button id="theme-toggle" class="theme-toggle">🌙</button>
-            </nav>
+    <header class="site-header">
+        <a class="site-home" href="/">aalhendi</a>
+        <nav class="site-nav" aria-label="Main navigation">
+            <a href="/">Home</a>
+            <a href="/about.html" aria-current="page">About</a>
+            <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch theme">🌙</button>
+        </nav>
+    </header>
+
+    <main class="resume-page" id="resume">
+        <header class="resume-header">
+            <p class="about-eyebrow">About me</p>
+            <h1>Abdulrazzaq Alhendi</h1>
+            <p class="resume-position">Backend &amp; Systems Engineer | Payments, Distributed Systems &amp; Native Software</p>
+
+            <address class="resume-contact">
+                <a href="tel:+96599915770">+965 9991 5770</a>
+                <span aria-hidden="true">|</span>
+                <a href="mailto:work@aalhendi.com">work@aalhendi.com</a>
+                <span aria-hidden="true">|</span>
+                <a href="https://aalhendi.com">aalhendi.com</a>
+                <span aria-hidden="true">|</span>
+                <a href="https://github.com/aalhendi">github.com/aalhendi</a>
+            </address>
+            <div class="resume-downloads" role="group" aria-label="Resume downloads">
+                <a class="toolbar-button toolbar-button--primary" href="assets/aalhendi_cv.pdf" download>Download resume <span>2 pages</span></a>
+                <a class="toolbar-button" href="assets/aalhendi_highlights.pdf" download>Download highlights <span>1 page</span></a>
+            </div>
         </header>
 
-        <main>
-            <div class="content">
-                <p class="description">
-                    About Me
-                </p>
-                <p class="intro">
-                    Someday I might write an intro paragraph...<br>
-                    <a href="/assets/aalhendi_cv.pdf" class="resume-link">Resume (.pdf)</a>
-                </p>
+        <section class="resume-section" aria-labelledby="experience-heading">
+            <h2 id="experience-heading">Experience</h2>
 
-                <div class="experience">
-                    <p>Formal Experience:</p>
-                    <ul>
-                        <li>2025 - Present - <a href="https://www.warbabank.com/english/personal/what-we-offer/digital-services">Warba Bank</a>, Software Developer (Back-End) - Kuwait</li>
-                        <li>2023 - 2025 - <a href="https://www.knet.com.kw/">The Shared Electronic Banking Services Company (KNET)</a>, Experienced Associate, Developer - Kuwait</li>
-                        <li>2023 - 2023 - <a href="https://www.warbabank.com/english/personal/what-we-offer/digital-services">Warba Bank</a>, Jr. Integrations Developer (Back-End) - Kuwait</li>
-                        <li>2020 - 2023 - <a href="https://research.dasmaninstitute.org/en/publications/">Dasman Diabetes Institute</a>, Sr. Research Technician - Kuwait</li>
-                        <li>2018 - 2019 - <a href="https://fshn.hs.iastate.edu/directory/wang-qian/">Wang Lab</a>, Research Assistant - Ames, Iowa, USA</li>
-                        <li>2018 - 2019 - <a href="https://scholar.google.com/citations?user=53UKJZ8AAAAJ&hl=en">Willette Lab</a>, Research Assistant - Ames, Iowa, USA</li>
-                        <li>2016 - 2018 - <a href="https://scholar.google.com/citations?user=daxl9aQAAAAJ&hl=en">Rollins Lab</a>, Research Assistant - Ames, Iowa, USA</li>
-                        <li>2019 - B.S Chemical Engineering - Iowa State University, USA</li>
-                    </ul>
-                </div>
+            <article class="resume-entry" data-views="full resume highlights">
+                <header class="entry-header">
+                    <h3>Software Developer - Backend <span>- Warba Bank (Kuwait)</span></h3>
+                    <p class="entry-date"><time datetime="2025-08">August 2025</time> - Present</p>
+                </header>
+                <ul>
+                    <li data-views="full resume highlights">Designed and built Warba Bank's core <strong>customer onboarding service, handling 100% of new account openings</strong> across mobile and branch channels.</li>
+                    <li data-views="full resume highlights">Delivered highly configurable workflows on a <strong>custom workflow engine integrated with 5+ services</strong>, modernising the codebase and improving observability.</li>
+                    <li data-views="full resume">Upgraded core integration platform libraries to JDK 25, improving runtime performance, security posture and compatibility across backend microservices.</li>
 
-                <p>
-                    Might post some of my recent projects or highlighted works. For now its empty...
-                </p>
-            </div>
-        </main>
+                </ul>
+            </article>
 
-        <footer>
-            <div class="footer-content">
-                <div class="footer-left">
-                    <a href="/">Home</a>
-                </div>
-                <div class="footer-center">
-                    © Copyright aalhendi 2023
-                </div>
-                <div class="footer-right">
-                    <a href="https://github.com/aalhendi/">Github</a>
-                </div>
-            </div>
-        </footer>
-    </div>
+            <article class="resume-entry" data-views="full resume highlights">
+                <header class="entry-header">
+                    <h3>Technical Lead - Contract <span>- Dawraty Educational Group (Kuwait)</span></h3>
+                    <p class="entry-date"><time datetime="2025-02">February 2025</time> - <time datetime="2026-02">February 2026</time></p>
+                </header>
+                <ul>
+                    <li data-views="full resume highlights">Modernised critical infrastructure by migrating an end-of-life PHP 7 application to Rust (approximately 75k LoC), preserving feature parity and backward compatibility while enabling <strong>3x faster response times</strong>.</li>
+                    <li data-views="full resume highlights">Architected CI/CD pipelines and containerisation, reducing deployment time by <strong>40%</strong> and enabling zero-downtime updates.</li>
+                    <li data-views="full resume">Reduced cloud costs through resource right-sizing, database scaling policy changes and offloading media to cost-efficient storage.</li>
 
-    <script src="theme.js"></script>
+                </ul>
+            </article>
+
+            <article class="resume-entry" data-views="full resume highlights">
+                <header class="entry-header">
+                    <h3>Experienced Associate, Developer <span>- KNET (Kuwait)</span></h3>
+                    <p class="entry-date"><time datetime="2023-10">October 2023</time> - <time datetime="2025-02">February 2025</time></p>
+                </header>
+                <ul>
+                    <li data-views="full resume highlights">Developed KNET's <strong>WAMD ISO 20022 instant-payments platform</strong>, implementing load balancing, mutual TLS and X.509 signatures through HSMs for security and scalability.</li>
+                    <li data-views="full resume highlights">Led database, garbage-collection and application-level performance work that delivered a measured <strong>500% increase in maximum operating capacity</strong> while maintaining 99.9% uptime.</li>
+
+                </ul>
+            </article>
+
+            <article class="resume-entry" data-views="full resume highlights">
+                <header class="entry-header">
+                    <h3>Junior Integration Developer - Backend <span>- Warba Bank (Kuwait)</span></h3>
+                    <p class="entry-date"><time datetime="2023-05">May 2023</time> - <time datetime="2023-10">October 2023</time></p>
+                </header>
+                <ul>
+                    <li data-views="full resume highlights">Migrated a monolithic banking application to a Kubernetes-based <strong>microservice architecture</strong> while moving from JDK 8 to JDK 17.</li>
+                    <li data-views="full resume">Implemented <strong>distributed tracing</strong> to investigate latency and accelerate root-cause analysis.</li>
+                    <li data-views="full resume">Led backend work on the "Pay Me" feature revamp, including entity modelling and KNET payment-processor integration.</li>
+
+                </ul>
+            </article>
+
+            <article class="resume-entry" data-views="full resume highlights">
+                <header class="entry-header">
+                    <h3>Senior Research Technician <span>- Dasman Diabetes Institute (Kuwait)</span></h3>
+                    <p class="entry-date"><time datetime="2020-07">July 2020</time> - <time datetime="2023-04">April 2023</time></p>
+                </header>
+                <ul>
+                    <li data-views="full resume">Modelled large-scale patient <strong>time-series data</strong> from electronic health records (2011-2020) in Python and documented repeatable analysis methods.</li>
+                </ul>
+            </article>
+
+            <article class="resume-entry" data-views="full">
+                <header class="entry-header">
+                    <h3>Undergraduate Research Assistant <span>- Qian Wang Lab, Iowa State University (Ames, IA)</span></h3>
+                    <p class="entry-date"><time datetime="2018-03">March 2018</time> - <time datetime="2019-12">December 2019</time></p>
+                </header>
+                <ul>
+                    <li>Built the initial version of a <strong>neuron-tracing application</strong> using computer vision and machine-learning techniques for neuron morphology research.</li>
+                </ul>
+            </article>
+
+            <article class="resume-entry" data-views="full">
+                <header class="entry-header">
+                    <h3>Undergraduate Research Assistant <span>- Auriel Willette Lab, Iowa State University (Ames, IA)</span></h3>
+                    <p class="entry-date"><time datetime="2018-01">January 2018</time> - <time datetime="2019-12">December 2019</time></p>
+                </header>
+                <ul>
+                    <li>Built a batch-processing pipeline for MRI brain scans and statistical analyses, reducing repeated computational and manual work.</li>
+                </ul>
+            </article>
+
+            <article class="resume-entry" data-views="full">
+                <header class="entry-header">
+                    <h3>Undergraduate Research Assistant <span>- Derrick Rollins Lab, Iowa State University (Ames, IA)</span></h3>
+                    <p class="entry-date"><time datetime="2016-08">August 2016</time> - <time datetime="2017-12">December 2017</time></p>
+                </header>
+                <ul>
+                    <li>Automated a feedforward predictive model-control system in VBA with configurable input steps, prediction horizons and temporal resolution.</li>
+                </ul>
+            </article>
+        </section>
+
+        <div class="continuation-heading" aria-hidden="true">Abdulrazzaq Alhendi <span>Experience &amp; selected work / 2</span></div>
+        <section class="resume-section" id="skills-section" aria-labelledby="skills-heading">
+            <h2 id="skills-heading">Technical Skills</h2>
+            <dl class="skill-list">
+                <div><dt>Languages</dt><dd>Java, Rust, C, Python, PHP, SQL</dd></div>
+                <div><dt>Platforms</dt><dd>Kubernetes, Docker, Linux, CI/CD, HSM integrations</dd></div>
+                <div><dt>Specialties</dt><dd>Distributed systems, microservices, payments, performance engineering, observability</dd></div>
+                <div data-views="full"><dt>Research</dt><dd>R, NumPy, pandas, Matplotlib, Seaborn; time-series analysis, MRI pipelines, computer vision</dd></div>
+                <div data-views="full"><dt>Native software</dt><dd>C, Rust, SDL3, Windows, Linux, reverse engineering, bytecode virtual machines</dd></div>
+                <div data-views="full resume"><dt>Spoken</dt><dd>Arabic, English</dd></div>
+            </dl>
+
+        </section>
+
+        <section class="resume-section" id="projects-section" aria-labelledby="projects-heading">
+            <h2 id="projects-heading">Selected Work</h2>
+
+            <article class="resume-entry project-entry" data-views="full resume highlights">
+                <header class="entry-header">
+                    <h3>CTR Native <span>- <a href="https://github.com/CTR-tools/ctr-native">github.com/CTR-tools/ctr-native</a></span></h3>
+                    <p class="entry-date"><time datetime="2023-04">April 2023</time> - Present</p>
+                </header>
+                <ul>
+                    <li data-views="full resume highlights">Primary contributor to a native PC port of <em>Crash Team Racing</em> (PS1), performing original <strong>C reverse engineering and decompilation</strong> and implementing runtime, platform, build and game-integration systems.</li>
+
+                    <li data-views="full resume">Reworked PSX-specific paths into SDL3-backed Windows and Linux abstractions while preserving behaviour across a large decompiled C codebase.</li>
+                </ul>
+            </article>
+
+            <article class="resume-entry project-entry" data-views="full resume">
+                <header class="entry-header">
+                    <h3>Kuwait Hackathon 2024 <span>- <a href="https://kuwaittimes.com/article/21804/kuwait/other-news/sheikh-fahad-al-yousef-honors-kuwait-hackathon-2024-winners/">Award coverage</a></span></h3>
+                    <p class="entry-date"><time datetime="2024-11">November 2024</time></p>
+                </header>
+                <ul>
+                    <li><strong>Won first place</strong> in a Capture the Flag challenge covering threat detection, system hardening, reverse engineering and digital forensics.</li>
+                </ul>
+            </article>
+
+            <article class="resume-entry project-entry" data-views="full resume">
+                <header class="entry-header">
+                    <h3><a href="https://github.com/aalhendi/loxiest">Loxiest</a></h3>
+                    <p class="entry-date"><time datetime="2023-07">July 2023</time></p>
+                </header>
+                <ul>
+                    <li>Built a portable interpreted language with object-oriented features, bytecode compilation, a custom <strong>virtual machine</strong>, REPL and script loading.</li>
+                </ul>
+            </article>
+
+            <article class="resume-entry project-entry" data-views="full resume">
+                <header class="entry-header">
+                    <h3>National Bank of Kuwait Hackathon <span>- <a href="https://kuwaittimes.com/nbk-honors-online-hackathon-winners/">Award coverage</a></span></h3>
+                    <p class="entry-date"><time datetime="2021-07">July 2021</time></p>
+                </header>
+                <ul>
+                    <li><strong>Won first place</strong> by designing and building a family-focused digital banking application within 48 hours.</li>
+                </ul>
+            </article>
+
+            <article class="resume-entry project-entry" data-views="full">
+                <header class="entry-header">
+                    <h3><a href="https://github.com/aalhendi/rlgame-rs">Rogue</a></h3>
+                    <p class="entry-date"><time datetime="2023-04">April 2023</time></p>
+                </header>
+                <ul>
+                    <li>Created a Rust roguelike game and engine that runs as a native binary or in the browser through WebAssembly.</li>
+                </ul>
+            </article>
+
+            <article class="resume-entry project-entry" data-views="full">
+                <header class="entry-header">
+                    <h3><a href="https://github.com/aalhendi/jackaroo-py">Jackaroo-py</a></h3>
+                    <p class="entry-date"><time datetime="2022-09">September 2022</time></p>
+                </header>
+                <ul>
+                    <li>Built a pure-Python Jackaroo simulation engine for artificial-agent training and statistical analysis.</li>
+                </ul>
+            </article>
+        </section>
+
+        <section class="resume-section resume-section--compact" aria-labelledby="education-heading">
+            <h2 id="education-heading">Education</h2>
+            <article class="resume-entry education-entry">
+                <header class="entry-header">
+                    <h3>B.S. in Chemical Engineering <span>- Iowa State University (Ames, IA)</span></h3>
+                    <p class="entry-date"><time datetime="2016-01">January 2016</time> - <time datetime="2019-12">December 2019</time></p>
+                </header>
+            </article>
+        </section>
+
+        <section class="resume-section resume-section--compact" data-views="full resume" aria-labelledby="certification-heading">
+            <h2 id="certification-heading">Certification</h2>
+            <article class="resume-entry education-entry">
+                <header class="entry-header">
+                    <h3>IBM AI Engineering - <a href="https://coursera.org/share/5e50266df7bf7baef69f29aa06e6440a">Credential</a></h3>
+                    <p class="entry-date"><time datetime="2026-04">April 2026</time></p>
+                </header>
+            </article>
+        </section>
+    </main>
 </body>
 </html>

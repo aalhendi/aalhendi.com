@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light dark">
+    <script src="theme.js"></script>
     <title>aalhendi</title>
-    <meta name="description" content="some of my stuff">
+    <meta name="description" content="Abdulrazzaq Alhendi - backend and systems engineer working across payments, distributed systems and native software.">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -16,21 +18,18 @@
                 </div>
                 <h1>aalhendi</h1>
             </a>
-            <nav>
-                <a href="/">Home</a>
+            <nav aria-label="Main navigation">
+                <a href="/" aria-current="page">Home</a>
                 <a href="/about.html">About</a>
                 <button id="theme-toggle" class="theme-toggle">🌙</button>
             </nav>
         </header>
 
         <main>
-            <div class="content">
-                <p class="description">
-                    some of my stuff
-                </p>
-                <p class="intro">
-                    Hello, World!
-                </p>
+            <div class="home-content">
+                <h2>I build systems, tools, and the occasional game.</h2>
+                <p class="home-intro">Backend and systems engineer working across payments, distributed systems, and native software.</p>
+                <a class="home-link" href="/about.html">More about me <span aria-hidden="true">→</span></a>
             </div>
         </main>
 
@@ -40,7 +39,7 @@
                     <a href="/">Home</a>
                 </div>
                 <div class="footer-center">
-                    © Copyright aalhendi 2023
+                    © Copyright aalhendi 2026
                 </div>
                 <div class="footer-right">
                     <a href="https://github.com/aalhendi/">Github</a>
@@ -49,6 +48,5 @@
         </footer>
     </div>
 
-    <script src="theme.js"></script>
 </body>
 </html>
